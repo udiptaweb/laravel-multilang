@@ -1,0 +1,26 @@
+{
+    "name": "udiptaweb/laravel-multilang",
+    "description": "Translate Dnamic Data into multiple languages",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Udiptaweb\\LaravelMultilang\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "udiptaweb",
+            "email": "gogoiudipta000@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Udiptaweb\\LaravelMultilang\\LaravelMultilangServiceProvider"
+            ]
+        }
+    }
+}
