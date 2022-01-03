@@ -5,7 +5,9 @@ Installation
 composer require udiptaweb/laravel-multilang
 
 Steps:
+
   1.After installation pbulish config and migration using php artisan vendor:publish
+  
     Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
   2. On the model you want to translate
