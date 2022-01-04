@@ -12,7 +12,8 @@ Steps:
   
     Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
-    This will publish config file named as laravel-multilang.php and a migration file named as 2022_01_03_102303_create_translations_table.php
+    This will publish config file named as laravel-multilang.php 
+    and a migration file named as 2022_01_03_102303_create_translations_table.php
     
  
  Usage:
