@@ -2,19 +2,45 @@
 
 Installation
 
-composer require udiptaweb/laravel-multilang
-
 Steps:
+   
+  1. Install the package using the command 
 
-  1.After installation publish config and migration using php artisan vendor:publish
+    composer require udiptaweb/laravel-multilang
+
+  2.After installation publish config and migration using php artisan vendor:publish
   
     Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
-  2. On the model you want to translate
+ 
+ Usage:
+    
+  1. On the model you want to translate
     import the trait
     
     use Udiptaweb\LaravelMultilang\Traits\hasTranslation;
-  3. Specify the column names which are to be translated by adding on model as 
+    
+  2. Specify the column names which are to be translated by adding on model as 
     
     protected $translable_cols = ['name'];
+    
+  3. Now to translate use the method as shown below
+     
+     $user = User::find($id)
+     
+     $user->getTranslated('field_name','language')
+     
+     e.g.
+     If you want to translate the field name of user to Hindi, then
+     
+     $user->getTranslated('name','hi')
+     
+ Available Languages : 
+ 
+  Avalilable languages are specied on published config file laravel-multilang.php as languages = ['en-us','hi','ass']
+  
+ Deafult language : 
+    You can change default language by specifying it on default_language filed on laravel-multilang.php
+    
+    ***You should use language code specified on languages array on laravel-multilang.php
   
