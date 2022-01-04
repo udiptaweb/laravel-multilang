@@ -12,6 +12,8 @@ Steps:
   
     Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
+    This will publish config file named as laravel-multilang.php and a migration file named as 2022_01_03_102303_create_translations_table.php
+    
  
  Usage:
     
@@ -25,15 +27,16 @@ Steps:
     protected $translable_cols = ['name'];
     
   3. Now to translate use the method as shown below
+
      
-     $user = User::find($id)
+    $user = User::find($id)
      
-     $user->getTranslated('field_name','language')
+    $user->getTranslated('field_name','language')
      
-     e.g.
-     If you want to translate the field name of user to Hindi, then
+    e.g.
+    If you want to translate the field name of user to Hindi, then
      
-     $user->getTranslated('name','hi')
+    $user->getTranslated('name','hi')
      
  Available Languages : 
  
