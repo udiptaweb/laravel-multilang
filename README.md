@@ -8,7 +8,7 @@ Steps:
 
     composer require udiptaweb/laravel-multilang
 
-  2.After installation publish config and migration using php artisan vendor:publish
+  2. After installation publish config and migration using php artisan vendor:publish
   
     Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
