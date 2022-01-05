@@ -9,4 +9,9 @@ class Translation extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function translationable()
+    {
+        return $this->morphTo();
+    }
 }

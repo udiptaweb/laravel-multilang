@@ -1,7 +1,7 @@
 <?php
 return [
-    'languages' => ['en-us','hi','ass'],
-    'default_language' => 'en-us'
+    'languages' => ['en','hi','fr'],
+    'default_language' => 'en'
 ]
 
 

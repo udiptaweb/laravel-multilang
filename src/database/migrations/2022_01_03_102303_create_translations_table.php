@@ -17,7 +17,9 @@ class CreateTranslationsTable extends Migration
             $table->id();
             $table->text('content');
             $table->string('col_name');
-            $table->integer('model_id');
+            $table->integer('translationable_id');
+            $table->string('table');
+            $table->string('translationable_type');
             $table->string('lang_code',5);
             $table->timestamps();
         });
