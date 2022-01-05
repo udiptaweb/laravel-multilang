@@ -39,6 +39,25 @@ Steps:
     If you want to translate the field name of user to Hindi, then
      
     $user->getTranslated('name','hi')
+    
+    
+ 4. Write the methods inside boot method on the model as below
+
+
+    protected static function boot()
+    {
+        parent::boot();
+        
+        static::created(function($model){
+            $model->createTranslation();
+        });
+        static::updated(function($model){
+            $model->updateTranslation();
+        });
+        static::deleted(function($model){
+            $model->deleteTranslation();
+        });
+    }
      
  Available Languages : 
  
