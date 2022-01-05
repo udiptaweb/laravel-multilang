@@ -44,9 +44,8 @@ Steps:
  4. Write the methods inside boot method on the model as below
 
 
-      
-      protected static function boot()
-       {
+        protected static function boot()
+        {
            parent::boot();
 
            static::created(function($model){
@@ -58,7 +57,7 @@ Steps:
            static::deleted(function($model){
                $model->deleteTranslation();
            });
-       }
+        }
      
  Available Languages : 
  
