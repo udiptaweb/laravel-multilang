@@ -8,13 +8,19 @@ Steps:
 
     composer require udiptaweb/laravel-multilang
 
-  2. After installation publish config and migration using php artisan vendor:publish
+  2. After installation publish config and migration using 
+
+    php artisan vendor:publish
   
-    Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
+  Then select provider Udiptaweb\LaravelMultilang\LaravelMultilangServiceProvider
     
-    This will publish config file named as laravel-multilang.php 
+  This will publish config file named as 
+  
+    laravel-multilang.php 
     
-    and a migration file named as 2022_01_03_102303_create_translations_table.php
+   and a migration file named as 
+    
+    2022_01_03_102303_create_translations_table.php
     
  
  Usage:
