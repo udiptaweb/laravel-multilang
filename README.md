@@ -55,7 +55,7 @@ Steps:
            });
         }
         
-  4.Install google translate <a href="https://github.com/JoggApp/laravel-google-translate"> laravel package </a> and set api_key
+  4.Install google translate <a href="https://github.com/JoggApp/laravel-google-translate"> laravel package </a> and set GOOGLE_TRANSLATE_API_KEY
   
   
   5. Now to translate use the method as shown below
