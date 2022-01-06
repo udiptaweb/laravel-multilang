@@ -34,20 +34,10 @@ Steps:
     
     protected $translable_cols = ['name'];
     
-  3. Now to translate use the method as shown below
 
-     
-    $user = User::find($id)
-     
-    $user->getTranslated('field_name','language')
-     
-    e.g.
-    If you want to translate the field name of user to Hindi, then
-     
-    $user->getTranslated('name','hi')
     
     
- 4. Write the methods inside boot method on the model as below
+ 3. Write the methods inside boot method on the model as below
 
 
         protected static function boot()
@@ -64,6 +54,20 @@ Steps:
                $model->deleteTranslation();
            });
         }
+        
+  4.Install google translate <a href="https://github.com/JoggApp/laravel-google-translate"> laravel package </a> and set api_key
+  
+  
+  5. Now to translate use the method as shown below
+
+         $user = User::find($id)
+
+         $user->getTranslated('field_name','language')
+     
+   e.g.
+    If you want to translate the field name of user to Hindi, then
+     
+    $user->getTranslated('name','hi')
      
  Available Languages : 
  
