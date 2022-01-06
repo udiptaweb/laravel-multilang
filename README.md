@@ -71,7 +71,7 @@ Steps:
      
  Available Languages : 
  
-  Avalilable languages are specied on published config file laravel-multilang.php as languages = ['en-us','hi','ass']
+  Avalilable languages are specied on published config file laravel-multilang.php as languages = ['en','hi']
   
  Deafult language : 
     You can change default language by specifying it on default_language filed on laravel-multilang.php
